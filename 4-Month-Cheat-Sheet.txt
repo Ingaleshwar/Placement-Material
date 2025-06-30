@@ -1,0 +1,366 @@
+_________
+LOOPS
+_________
+
+---MCQ---
+
+1. Predict the output - 
+        int i=0;
+        for (;i<5;){
+            i++;
+            System.out.print(i);
+        }
+
+   A. 1234
+   B. 12345
+   C. 01234   
+   D. 13
+
+2. Predict the output - 
+
+   for (int i=0,j=0; (i<5) && (j<4); i++,j++){
+       System.out.println(i + " , " + j);
+   }
+
+   A. 0,0 1,1 2,2 3,3
+   B. 0,0 1,1 2,2 3,3 4,3
+   C. compilation error 
+   D. compiled successfully but throws runtime exception
+
+
+3. Predict the output - 
+       int x=1;
+        while (x){
+            System.out.println(x);
+            x++;
+        }
+
+   A. 1
+   B. no output
+   C. Infinite loop 
+   D. code does not compile
+
+
+4. Give the output and show the dry run.
+   public static void abc(){
+	int x=1, i=2;
+	do{
+	   x*=i;
+        }while(++i<=5);
+        System.out.println(x);
+   }
+
+   A. 110
+   B. 120
+   C. 110   
+   D. code does not compile
+
+
+5. What is the result of the following code?
+
+   do {
+      int count = 0;
+      do {
+           count++;
+      } while (count < 2);
+      break;
+   } while (true);
+   System.out.println(count);
+
+   A. 2
+   B. 1
+   C. code does not compile   
+   D. This is an infinie loop
+
+
+---CODING QUESTION---
+
+Question 1 : Write a program to print numbers from 1 to 10.
+
+Question 2 : Write a program to calculate the sum of first n natural number.
+
+Question 3 : Write a program that prompts the user to input a positive integer. It should then print the multiplication table of that number. 
+	     Ex: 5 * 1 = 5
+                 5 * 2 = 10 ... up to 10 terms
+
+Question 4 : Write a program to find the factorial value of any number entered by the user as an input. 
+
+Question 5 : Two numbers are entered by the user. Write a program to find the value of one number raised to the power of another. (Do not use Java built-in method)
+
+Question 6 : Write a program that prompts the user to input an integer and then outputs the number with the digits reversed. 
+             For example, if the input is 12345, the output should be 54321.
+
+Question 7 : Write a program that take an integer from user, and then prints the sum of the even and odd digits.
+
+Question 8 : Write a program that prompts the user to input a positive integer. It should then output a message indicating whether the number is a prime number. 
+
+Question 9 : Write a program to calculate HCF of Two given number.
+
+Question 10 : Print the sum of all factors of a number, 50 -> 1 + 2 + 5 + 10 + 25 = 43
+
+Question 11 : Write a do-while loop that asks the user to enter two numbers. The numbers should be added and the sum displayed. 
+              The loop should ask the user whether he or she wishes to perform the operation again. If so, the loop should repeat; 
+              otherwise it should terminate. 
+
+Question 12 : Write a program to enter the numbers till the user wants and at the end it should display the count of positive, negative and zeros entered. 
+
+Question 13 : Write a program to enter the numbers till the user wants and at the end the program should display the largest and smallest numbers entered.
+
+Question 14 : Accept a number and check if it is a pallindromic number (If number and its reverse are equal)
+              Ex - 12321 - Rerverse - 12321
+
+Question 15 : Accept a number and check if it is a strong number or not (Sum of factorial of each digit)
+              Ex- 145 = 1! + 4! + 5! = 145
+
+____________
+ARRAY
+____________
+
+---MCQ---
+
+1. How many of them are not correct declaration of array? 
+        int i=0;
+        for (;i<5;){
+            i++;
+            System.out.print(i);
+        }
+
+   A. int [] arr = new int[5];
+   B. int []arr = new int[5];
+   C. []int arr = new int[5];   
+   D. int arr[] = new int[5]{1,2,3,4,5};
+
+2. Predict the output - 
+
+   int arr[] =  new int[5];
+   arr[0] = 1;
+   arr[1] = 2;
+   arr[2] = 3;
+   arr[3] = 4;
+   System.out.println(arr.length);
+
+   A. 4
+   B. 5
+   C. code does not compile
+   D. Run-time error
+
+
+3. What will be the output of the following Java code?
+   class evaluate{
+        public static void main(String args[]) {
+            int arr[ ] = new int[ ] {0, 1, 2, 3, 4, 5, 6, 7};
+            int n = 6;
+            n = arr[arr[n] / 2];
+            System.out.println(arr[n] / 2);
+        } 
+   }
+
+   A. 3
+   B. 6
+   C. 1 
+   D. 2
+
+
+4. Find the value of arr[1] after execution of the following program.
+
+   int[] arr = {0,2,4,1,3};
+   for(int i = 0; i < arr.length; i++){
+       arr[i] = arr[(arr[i] + 3) % arr.length];
+   } 
+
+   A. 0
+   B. 1
+   C. 2   
+   D. 3
+
+
+5. Find the output of the following program.
+
+   public class Solution{
+       public static void main(String[] args){
+               int[]  x = {120, 200, 016};
+               for(int i = 0; i < x.length; i++){
+                   System.out.print(x[i] + “ “);
+               }                   
+       }
+   }
+
+   A. 120 200 016
+   B. 120 200 14
+   C. 120 200 16   
+   D. None
+
+
+---CODING QUESTION---
+
+Question 1 : Write a program that accept siz from user and create n size array then also take elements of array from user and
+             print the elements.
+
+Question 2 : Write a program to find the maximum and minimum element in an array.
+             Ex : {2, 96, 69, 77, 145, 20} = Max element = 145 found at 4 index and Max element = 2 found at 0 index
+
+Question 3 : Write a program to find the second greatest element in an 
+             {2, 96, 69, 77, 145, 20} = Second greatest element = 96 
+
+Question 4 : Write a program to reverse an array.
+
+Question 5 : Write a program to check if an array is sorted in non-decreasing order.
+
+Question 6 : Write a program to rotate an array to the left by a 0 element.
+
+Question 7 : Write a program to rotate an array to the left by a given number of steps.
+
+Question 8 : Find the target element in an array if element found print the index else -1 | TC : O(n).                                                                                                 
+
+Question 9 : Find the target element in an array if element found print the index else -1 | TC : O(log(n)). 
+
+Question 10 : Write a program to check if an array contains duplicate elements.
+
+Question 11 : An array conatin only 0's and 1's your task is to move all the 0 on left side and 1 on right side O(n).
+
+Question 12 : Write a program to print the count of subarrays whose sum is equal to the target.
+	      Ex - {1,2,3,7,5}, T = 12  O/P - 2 - [ {2,3,7}, {7,5} ] - Both the subarrays has sum 12 
+
+Question 13 : You are given an array nums & an integer original. If original is found in nums, multiply it by two Otherwise, stop the process.
+              Repeat this process with the new number as long as you keep finding the number. Return the final value of original.
+              Input: nums = [5,3,6,1,12], original = 3
+	      Output: 24
+
+Question 14 : Write a program to find the frequency of each element in an array.
+
+Question 15 : Find the product of all elements in an array, except the current one.
+
+
+_________
+STRING
+_________
+
+---MCQ---
+
+1. What will be the output of the following Java program?
+
+    class string_class  {
+        public static void main(String args[]){
+            String obj = "I LIKE JAVA";   
+            System.out.println(obj.charAt(3));
+        } 
+    }
+
+   A. I
+   B. L
+   C. K   
+   D. E
+
+2. What will be the output of the following Java program?
+
+    class string_class {
+        public static void main(String args[]){
+            String obj = "I LIKE JAVA";
+               System.out.println(obj.length());
+        }
+    }
+
+   A. 9
+   B. 10
+   C. 11
+   D. 12
+
+
+3. Predict the output -  
+   class Main {
+    public static void main(String[] args) {
+        String s = "hello";
+        System.out.println(s.substring(0,5));
+        System.out.println(s.substring(5));
+    }
+   }
+
+   A. hello
+   B. hello ArrayIndexOutOfBoundException
+   C. hello o
+   D. code does not compile
+
+
+4. class Main{
+    public static void main(String[] args){
+        String s = "Java";
+        s.concat(" Rules!");
+        System.out.println(s);
+    }
+   }
+
+   A. Java Rules
+   B. Java
+   C. Java Rules!   
+   D. code does not compile
+
+
+5. What is the output of the following code?
+
+        String a = new String("labra");
+        String b = new String("labra");
+        String c = "labra";
+        String d = "labra";
+        System.out.println(c == d);
+        System.out.println(a == b);
+
+   A. true false
+   B. true true
+   C. false true   
+   D. false false
+	
+
+
+---CODING QUESTION---
+
+Question 1 : Write a program to accept a string from user and print its each character on a new line. 
+
+Question 2 : Write a program to Accept a string and print it in reverse order.
+
+Question 3 : Write a program to check if the string is Pallindromic or not
+
+Question 4 : Write a program to check if the string is Pallindromic String using method and Two pointer algorithm (hint: Array reverse algo)
+
+Question 5 : Write a program to count vowels and consonents in a string.
+
+Question 6 : Write a program to toggle each alphabet of String 
+             Ex : Shery |  Output - sHERY 
+
+Question 7 : Write a program that determine if a string has all unique characters.
+
+Question 8 : Write a program that take an array of strings words and a String Prefix. Print the number of strings in words that contain 
+             pref as a prefix.
+             Ex : Input: words = ["pay","attention","practice","attend"], pref = "at"
+                  Output: 2
+
+Question 9 : Write a program to accept a space seperated sentence and split in into words. Print each word on a new line with first 
+             letter capitalized.
+             Ex : Input : Hello bhai kaise ho
+                  Output:Hello
+                         Bhai
+                         Kaise
+                         Ho
+
+Question 10 : Write a program to accept a string and print the frequency of each character present in the string
+
+Question 11 : Write a program to check Two Strings are Anagram or Not Anagrams words have the same word length & same character count
+              Examples of anagram words are arc and car, state and taste, night and thing etc. 
+
+Question 12 : Write a program to find the first repeated character in a string.
+
+Question 13 : Write a program to determine if a string has all unique characters
+
+Question 14 : Write a program to Return the maximum number of words that appear in a single sentence.
+              Ex : Input: sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
+                   Output: 6
+
+Question 15 : Write a program to sort the words of the sentence.
+
+
+
+
+              
+
+
+
+
